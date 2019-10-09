@@ -105,6 +105,9 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
             case R.id.itBrown:
                 Toast.makeText(this, "Exit", Toast.LENGTH_SHORT).show();
                 return true;
+            case R.id.itAbout:
+                Toast.makeText(this, "Exit", Toast.LENGTH_SHORT).show();
+                return true;
 
 
         }
