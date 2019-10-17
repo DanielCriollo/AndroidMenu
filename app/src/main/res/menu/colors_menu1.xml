@@ -18,7 +18,7 @@
         />
     <item
         android:id="@+id/itsemiTransaparent"
-        android:title="@string/semiTransparent"
+        android:title="Transparent"
         />
     <item
         android:id="@+id/itTransaparent"

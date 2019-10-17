@@ -3,6 +3,7 @@ package com.e.colorsapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -79,34 +80,64 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         int id= item.getItemId();
         switch (item.getItemId()){
             case R.id.itRed:
-                Toast.makeText(this, "Car", Toast.LENGTH_SHORT).show();
+                sbRed.setProgress(255);
+                sbGreen.setProgress(0);
+                sbBlue.setProgress(0);
+                sbAlpha.setProgress(100);
                 return true;
             case R.id.itGreen:
-                Toast.makeText(this, "Search", Toast.LENGTH_SHORT).show();
+                sbRed.setProgress(0);
+                sbGreen.setProgress(255);
+                sbBlue.setProgress(0);
+                sbAlpha.setProgress(100);
                 return true;
             case R.id.itBlue:
-                Toast.makeText(this, "Help", Toast.LENGTH_SHORT).show();
+                sbRed.setProgress(0);
+                sbGreen.setProgress(0);
+                sbBlue.setProgress(255);
+                sbAlpha.setProgress(100);
                 return true;
             case R.id.itYellow:
-                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+
+                sbRed.setProgress(255);
+                sbGreen.setProgress(255);
+                sbBlue.setProgress(0);
+                sbAlpha.setProgress(100);
                 return true;
             case R.id.itTransaparent:
-                Toast.makeText(this, "Exit", Toast.LENGTH_SHORT).show();
+                sbRed.setProgress(0);
+                sbGreen.setProgress(0);
+                sbBlue.setProgress(0);
+                sbAlpha.setProgress(100);
                 return true;
             case R.id.itMagenta:
-                Toast.makeText(this, "Exit", Toast.LENGTH_SHORT).show();
+                sbRed.setProgress(0);
+                sbGreen.setProgress(255);
+                sbBlue.setProgress(255);
+                sbAlpha.setProgress(100);
                 return true;
             case R.id.itsemiTransaparent:
-                Toast.makeText(this, "Exit", Toast.LENGTH_SHORT).show();
+                sbRed.setProgress(128);
+                sbGreen.setProgress(0);
+                sbBlue.setProgress(0);
+                sbAlpha.setProgress(100);
                 return true;
             case R.id.itCyan:
-                Toast.makeText(this, "Exit", Toast.LENGTH_SHORT).show();
+                sbRed.setProgress(0);
+                sbGreen.setProgress(160);
+                sbBlue.setProgress(227);
+                sbAlpha.setProgress(100);
                 return true;
             case R.id.itBrown:
-                Toast.makeText(this, "Exit", Toast.LENGTH_SHORT).show();
+                sbRed.setProgress(165);
+                sbGreen.setProgress(42);
+                sbBlue.setProgress(42);
+                sbAlpha.setProgress(100);
                 return true;
             case R.id.itAbout:
-                Toast.makeText(this, "Exit", Toast.LENGTH_SHORT).show();
+                Intent myIntent = new Intent(MainActivity.this, About.class);
+                startActivity(myIntent);
+
                 return true;
 
 
